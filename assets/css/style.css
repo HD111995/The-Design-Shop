@@ -1,0 +1,349 @@
+@font-face {
+    font-family:karla;
+    src: url('../font/Karla-VariableFont_wght.ttf');
+}
+/* Farbe: #323A45 / #848484
+ */
+ /* Rendering */
+ *{
+     margin: 0;
+     padding:0;
+ }
+ body{
+     font-family:karla;
+     font-weight:200;
+     color:#323A45;
+ }
+ /* Global Styling */
+ ul{
+     list-style:none;
+ }
+ a{
+     text-decoration-line: none;
+     color:black;
+     font-family:karla;
+     font-weight:500;
+     font-size:18px;
+ }
+ h5{
+     font-size:18px;
+     margin:20px 0 10px 0;
+ }
+ h6{
+     font-size:16px;
+     color: #848484;
+ }
+ h4{
+    font-size:18px;
+    margin-bottom:5vh;
+ }
+ img{
+     width:25vw;
+ }
+ body section:not(.about,.pro-5) {
+     padding:0 7vw;
+     display:grid;
+     grid-template-columns:25vw 25vw 25vw;
+     grid-template-rows: 1.2fr 1fr 1fr;
+     justify-content:center;
+     grid-gap:2.5vw;
+     margin-bottom:2.5vw;
+     
+ }
+ section article:first-of-type{
+     grid-column:1/4;
+ }
+ section article:first-of-type a img {
+     width:80vw;
+ }
+ section article>div{
+     display:flex;
+     justify-content:space-between;
+ }
+
+ /* Global Styling End */
+ /* Header Styling */
+ header{
+     padding:40px 10vw;
+ }
+ nav{
+     display:flex;
+     justify-content:space-between;
+ }
+ nav ul{
+     width:25vw;
+     display:flex;
+     justify-content:space-between;
+ }
+ /* Header Styling End */
+/* Section pro-5 Styling */
+.pro-5{
+    padding:0 7vw;
+    display:grid;
+    grid-template-columns:25vw 25vw 25vw;
+    grid-template-rows: 1.2fr 1fr;
+    justify-content:center;
+    grid-gap:2.5vw;
+    margin-bottom:12vh;
+}
+/* pro-5 Styling End */
+/* Styling Section About */
+.about{
+    padding:0 7vw;
+    display:grid;
+    grid-template-columns:25vw 25vw 25vw;
+    justify-content:center;
+    grid-gap:2.5vw;
+    margin-bottom:4vh;
+}
+.about p{
+line-height:30px;
+}
+.about a{
+    margin-bottom:1vh;
+}
+.midle{
+    display:flex;
+    justify-content:space-between;
+}
+.midle a{
+    display:block;
+}
+.sc-media{
+    justify-self: center;
+}
+.sc-media ul li {
+    margin-bottom:1vh;
+}
+/* End Of Styling about */
+/* Footer Styling */
+footer{
+
+    padding:20px 9.3vw;
+}
+footer p{
+    color:#848484;
+}
+/* Footer Styling End */
+
+/* Responsive Design Media-Qeury */
+@media only screen and (max-width:900px){
+/* Global Stylings */
+h1{
+font-size:18px;
+margin-bottom:2vh;
+}
+a{
+    font-size:10px;
+}
+h5{
+    font-size:10px;
+}
+h6{
+    font-size:8px;
+}
+h4{
+   font-size:10px;
+   margin-bottom:2vh;
+}
+img{
+    width:37.5vw;
+}
+body section:not(.about,.pro-5) {
+    grid-template-columns:37.5vw 37.5vw ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap:2.5vw;
+    column-gap:5vw;  
+}
+section article:first-of-type{
+    grid-column:1/3;
+}
+/* Global End */
+/* Header Styling */
+header{
+    padding:20px 10vw;
+    
+}
+nav{
+    flex-direction:column;
+    align-items:center;
+}
+nav ul{
+    width:60vw;
+}
+/* Header Styling End */
+/* Section pro-5 Styling */
+.pro-5{
+    grid-template-columns:37.5vw 37.5vw;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap:2.5vw;
+    column-gap:5vw; 
+    margin-bottom:12vh;
+}
+/* pro-5 Styling End */
+/* Styling Section About */
+.about{
+    padding:0 7vw;
+    display:grid;
+    grid-template-columns:75vw;
+    row-gap:5vw;
+    column-gap:5vw; 
+    margin-bottom:4vh;
+}
+.about p{
+font-size:8px;
+line-height:20px;
+}
+.about a{
+    margin-bottom:1vh;
+}
+.info{
+    text-align:center;
+}
+.midle{
+    justify-content:space-around;
+}
+.sc-media{
+    /* justify-self: center; */
+    text-align:center;
+}
+.sc-media ul {
+    width:60vw;
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:0vh;
+}
+/* End Of Styling about */
+/* footer Styling */
+footer{
+    text-align:center;
+}
+footer p{
+    font-size:10px;
+}
+} 
+/* Media max-width:900px End */
+/* ++++++++++++++++++++++++++++++++++++++ */
+/* Media max Width:1275px */
+@media only screen and (min-width:901px) and (max-width:1275px){
+    /* Global Stylings */
+    h1{
+    font-size:20px;
+    margin-bottom:2vh;
+    }
+    a{
+        font-size:14px;
+    }
+    h5{
+        font-size:14px;
+    }
+    h6{
+        font-size:12px;
+    }
+    h4{
+       font-size:14px;
+       margin-bottom:1vh;
+    }
+    img{
+        width:37.5vw;
+    }
+    body section:not(.about,.pro-5) {
+        grid-template-columns:37.5vw 37.5vw ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap:2.5vw;
+        column-gap:5vw;  
+    }
+    section article:first-of-type{
+        grid-column:1/3;
+    }
+    /* Global End */
+    /* Header Styling */
+    header{
+        padding:20px 10vw;
+        
+    }
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+    nav ul{
+        width:60vw;
+    }
+    /* Header Styling End */
+    /* Section pro-5 Styling */
+    .pro-5{
+        grid-template-columns:37.5vw 37.5vw;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap:2.5vw;
+        column-gap:5vw; 
+        margin-bottom:12vh;
+    }
+    /* pro-5 Styling End */
+    /* Styling Section About */
+    .about{
+        padding:0 7vw;
+        display:grid;
+        grid-template-columns:75vw;
+        row-gap:5vw;
+        column-gap:5vw; 
+        margin-bottom:4vh;
+        background-color: #323A45 ;
+        color:white;
+    }
+    .about p{
+    font-size:12px;
+    line-height:20px;
+    }
+    .about a{
+        margin-bottom:1vh;
+        color:white;
+    }
+    .info{
+        text-align:center;
+    }
+    .midle{
+        justify-content:space-around;
+    }
+    .sc-media{
+        /* justify-self: center; */
+        text-align:center;
+    }
+    .sc-media ul {
+        width:60vw;
+        display:flex;
+        justify-content:space-around;
+        margin-bottom:0vh;
+    }
+    /* End Of Styling about */
+    /* footer Styling */
+    footer{
+        text-align:center;
+    }
+    footer p{
+        font-size:14px;
+    }
+    } 
+    /* end Media Max-width:1275 */
+    /* +++++++++++++++++++++++++++++++ */
+    /* Start media max-width:1439px */
+    @media only screen and (min-width:1276px) and (max-width:1439px){
+        h1{
+            font-size:20px;
+            }
+            a{
+                font-size:14px;
+            }
+            h5{
+                font-size:16px;
+            }
+            h6{
+                font-size:14px;
+            }
+            h4{
+               font-size:16px;
+               margin-bottom:2vh;
+            }
+            nav ul{
+                width:25vw;
+            }
+    }
