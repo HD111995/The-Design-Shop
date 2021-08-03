@@ -60,6 +60,9 @@
      display:flex;
      justify-content:space-between;
  }
+ article a:hover{
+     opacity:0.4;
+ }
 
  /* Global Styling End */
  /* Header Styling */
@@ -74,6 +77,12 @@
      width:25vw;
      display:flex;
      justify-content:space-between;
+ }
+ nav ul li a:hover{
+     color:#848484;
+ }
+ h1:hover{
+    color:#848484; 
  }
  /* Header Styling End */
 /* Section pro-5 Styling */
